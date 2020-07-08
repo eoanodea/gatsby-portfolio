@@ -55,23 +55,16 @@ const Footer = () => (
       const { name, socialLinks } = data.contentfulAbout;
 
       return (
-        <Box p={[2, 3]} backgroundColor="primaryDark" id="footer">
+        <Box p={[2, 3]} backgroundColor="secondaryDark" id="footer">
           <FooterContainer>
             <Fade left>
               <TextFooter fontSize={[2, 3]}>
-                <span>{`${name} Portfolio - Powered by `}</span>
+                <span>{`Built using `}</span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
-                <span>, </span>
-                <Link href="https://www.contentful.com/" mr={1}>
-                  Contentful
+                <span> & </span>
+                <Link href="https://reactjs.org/" mr={1}>
+                  React
                 </Link>
-                <span> and </span>
-                <Link href="https://www.netlify.com/" mr={1}>
-                  Netlify
-                </Link>
-                <span role="img" aria-label="heart">
-                  ❤️
-                </span>
               </TextFooter>
             </Fade>
             <Flex>

@@ -72,11 +72,11 @@ const LandingPage = () => (
             <Heading
               textAlign="center"
               as="h1"
-              color="primary"
+              color="text"
               fontSize={[6, 7]}
               mb={[3, 4, 5]}
             >
-              {`Hello, I'm ${name}!`}
+              {`Hey, I'm ${name}.`}
             </Heading>
 
             <Heading

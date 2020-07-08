@@ -13,15 +13,21 @@ const GlobalStyle = createGlobalStyle`
   *::before { 
     box-sizing: inherit;
     }
-
   body {
     box-sizing: border-box; 
     margin: 0;
-    font-family: Cabin, 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     width: 100vw;
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
+  }
+  h1, h2 {
+    font-family: 'Montserrat';
+  }
+  p {
+    font-size: 1.3em;
+    font-weight: 400
   }
 `;
 
@@ -39,7 +45,7 @@ const theme = {
   ...preset,
   colors,
   fonts: {
-    body: 'Cabin, Open Sans, sans-serif',
+    body: 'Roboto, sans-serif',
     heading: 'inherit',
     monospace: 'monospace',
   },

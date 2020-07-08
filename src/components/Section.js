@@ -40,9 +40,9 @@ Container.propTypes = {
 
 const Header = ({ name, icon = '', label = '' }) => (
   <Slide left>
-    <Heading color="secondaryDark" mb={4}>
+    <Heading style={{fontSize: '4em', fontWeight: 900}} color="secondaryDark" mb={4}>
       <LinkAnimated selected>
-        {name}
+        {name}.
         {icon && (
           <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
             {icon}
